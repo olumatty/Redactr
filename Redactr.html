@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PROJECT</title>
+    <link href ="Redactr.css", rel="stylesheet" />
+    
+</head>
+
+<body>
+    
+    <div class = "container">
+        <h1 class = Title> REDACTR </h1>
+        <P class = "words"> !! scramble some words from a body of text content !! </P>
+
+
+        <form class = "form_box", id ="My_form">
+
+            <div class="form_content">
+            <label class="form_label" for="Content">Enter your Content:</label>
+            <textarea class ="form_input_textarea" id = "content"name="message"> </textarea>
+            </div>
+
+            <div class = "form_content">
+            <label class ="form_label"  id = "redactwords" for="Words">Word to redacted :</label>
+            <input class="form_input_words" type="text" id="redactWords" > 
+            </div>
+
+            <div class ="form_content" >
+            <label class ="form_label" for="replacement">Choose a replacement:</label> 
+
+             <select class ="form_input_words" id="replacement"><br>
+                <option value="****">Asterisks</option>
+                <option value="????">Question marks</option>
+                <option value="____">Dashes</option>
+                <option value="****"> underscore</option>
+            </select>
+         </div>
+
+          <button class="redactButton" type="button" onclick="redactContent ()">
+            Redact Now
+          </button>
+  
+          <button class="resetButton" type="button" onclick="resetForm ()">
+            Reset Form
+          </button>
+        </form>
+
+            <div class="RedactedTitle">
+                <h2> REDACTED CONTENT</h2>
+                <P> STATUS: </P>
+
+                <P id = "stat">
+                     WordScanned: 
+                    <span id ="wordsScanned",class = "count"> 0 </span>
+
+                   , Words redacted: 
+                    <span id ="wordsRedacted",class = "count">0 </span>
+
+                    , Characters redacted: 
+                    <span id ="charactersRedacted",class = "count">0 </span>
+
+                    , Time taken: 
+                    <span id ="timeTaken",class = "count">0 </span>
+                </P>
+            </div>
+        </form>
+    </div>
+    <script src = "Redactr.Js" defer></script>  
+</body>
+</html>

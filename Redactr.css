@@ -1,0 +1,117 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body{
+    display : flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container{
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    padding : 25px 30px;
+    border-radius: 7px;
+    height: 540px;
+}
+
+.Title{
+    font-size: 35px;
+    font-weight : 700;
+    text-align: center;  
+    position: relative;
+    color: #303030;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.words{
+    text-align: center;
+    color:#9b59b6;
+
+}
+
+.form_content, resetButton, RedactedTitle, stat {
+    font-family: "Barlow Condensed", sans-serif;
+    
+}
+
+.form_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_input_textarea{
+    height: 45px;
+    border-radius : 7px;
+    padding: 10px;
+    border: 1px solid rgb(26, 26, 109);
+    margin-bottom: 10px;
+}
+
+.form_input_words{
+    height: 45px;
+    margin-bottom: 10px;
+    border-radius : 7px;
+    padding: 10px;
+    border:1px solid rgb(26, 26, 109);
+}
+
+.redactButton{
+    height: 45px;
+    width: 100%;
+    border-radius : 7px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    color:#fff;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6) ;
+
+}
+
+.resetButton{
+    height: 45px;
+    width: 100%;
+    border-radius : 7px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    background:rgb(204, 204, 204)
+}
+
+.form_label{
+    margin-bottom:3px;
+    margin-left: 1px;
+
+}
+
+.RedactedTitle h2 {
+    text-align: left;
+    color: #303030;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 3px;
+}
+
+.RedactedTitle p {
+    color:#303030;
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom:5px;
+}
+
+#stat {
+    font-family: "Barlow Condensed", sans-serif;
+    color: rgb(17, 17, 90);
+}
+
+#WordScan{
+    color:green;
+}
